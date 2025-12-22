@@ -28,6 +28,8 @@ nav ul{
      align-items: center; 
      margin: 0;
      padding: 0;
+     
+     
 }
 nav ul li{
     margin: 20px;
@@ -46,6 +48,39 @@ nav ul li a{
 nav ul li ~ li a:hover{
     border-bottom: rgb(151, 57, 228) 2px solid;
 }
+
+/* Mobile */
+@media  (max-width: 767px){
+    header {
+        height: 100px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;          
+        justify-content: center;
+    }
+
+    nav ul li.logo {
+        width: 100%;            
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .intro{
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro h1{
+        margin-left: 400px;
+        text-align: center;
+    }
+    .cc{
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 280px; 
+    }
+
+}
+
 
 main{
     margin: 55px;
@@ -106,101 +141,6 @@ main{
 .mark2{
     font-size: 1.5em;
 }
-
-
-/* Tablet */
-@media (max-width: 850px) {
-      .intro {
-        gap: 30px;
-    }
-    .intro h1 {
-        margin-right: 200px;
-        font-size: 1.5em;
-    }
-    .landing-page button{
-        margin-left: 20em;
-    }
-  .social-media {
-    display: none;
-    }
-}
-/* Tablet */
-@media (max-width: 850px) {
-
-    .highlights {
-        padding: 40px 20px;
-    }
-
-    .highlights h2 {
-        text-align: center;
-        font-size: 1.6em;
-        margin-bottom: 30px;
-    }
-
-    .card {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        justify-content: center;
-    }
-
-    .cc {
-        flex: 1 1 280px;  
-        max-width: 320px;
-        min-width: 260px;
-
-        padding: 18px;
-        text-align: center;
-    }
-
-    .cc h3 {
-        font-size: 1.2em;
-    }
-
-    .cc p {
-        font-size: 0.95em;
-        line-height: 1.4;
-    }
-
-    .cc ul li {
-        font-size: 0.9em;
-    }
-}
-
-/* Tablet */
-@media (max-width: 850px) {
-
-    .certificates {
-        padding: 40px 20px;
-        text-align: center;
-    }
-
-    .certificates h2 {
-        font-size: 1.6em;
-        margin-bottom: 10px;
-    }
-
-    .certificates p {
-        font-size: 0.95em;
-        margin-bottom: 25px;
-    }
-
-    .certificates img {
-        width: 60px;
-        height: auto;
-        margin: 10px 15px;
-        display: inline-block;
-        transition: transform 0.3s ease;
-    }
-
-    .certificates img:active {
-        transform: scale(0.95);
-    }
-}
-
-
-
-
 
 .card{
     display: flex;
