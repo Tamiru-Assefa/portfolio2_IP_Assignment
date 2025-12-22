@@ -26,10 +26,8 @@ nav ul{
      height: 5em;
      justify-content: center; 
      align-items: center; 
-     margin: 0;
-     padding: 0;
-     
-     
+      margin: 0;
+   
 }
 nav ul li{
     margin: 20px;
@@ -60,10 +58,9 @@ nav ul li ~ li a:hover{
         justify-content: center;
     }
 
-    nav ul li.logo {
-        width: 100%;            
+    nav ul li.logo {            
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     .intro{
         flex-direction: column;
@@ -95,7 +92,6 @@ main{
     font-size: 2em;
     line-height: 1.1em;
     margin-right: 400px;
-    padding: auto;
     border: saddlebrown 2px solid;
 }
 .landing-page{
@@ -109,7 +105,7 @@ main{
 }
 .landing-page button{
     margin-top: 30px;
-    margin-right: 13em;
+    margin-left: 12em;
     padding: 10px 20px;
     font-size: 1em;
     background-color: rgb(151, 57, 228);
@@ -127,25 +123,18 @@ main{
     margin-left: 10px;
     margin-right: 10px;
 }
-.highlights h2{
-    
+.highlights h2{ 
     padding: 0;
     font-size: 2em;
     text-align: center;
     margin-bottom: 30px;
     color: rgb(120, 40, 200) ;
 }
-.mark{
-    color: rgb(151, 57, 228);
-}
-.mark2{
-    font-size: 1.5em;
-}
 
 .card{
     display: flex;
     margin-left: 35px;
-     flex-wrap: wrap;
+    flex-wrap: wrap;
     
 }
 .cc{
@@ -185,7 +174,6 @@ h3{
     padding-bottom: 30px;
 }
 .certificates h2{
-    padding: 0;
     font-size: 2em;
     text-align: center;
     margin-bottom: 30px;
@@ -202,8 +190,7 @@ h3{
 }
 .contact{
     margin-top: 80px;
-    margin-right: 10px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .contact  h2{
     padding: 0;
@@ -212,20 +199,13 @@ h3{
     margin-bottom: 30px;
     color: rgb(120, 40, 200) ;
 }
-form{
-    border: saddlebrown 2px solid;
-    margin-left: 0%;
-}
-.contact form{
-    margin-top: 20px;
- 
-}
+
 .contact form label{
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 .contact form input[type="text"],[type="email"]{
-    width: 80%;
+    width: 70%;
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -233,7 +213,7 @@ form{
     font-size: 1em;
 }
 .contact form textarea{
-    width: 80%;
+    width: 70%;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -281,6 +261,7 @@ footer{
 .social-media img:hover{
     transform: scale(1.1);
 }
+/* Footer Contact Info */
 .contact-info ul{
     list-style-type: none;
     display: flex;
