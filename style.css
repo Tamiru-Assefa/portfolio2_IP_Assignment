@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+html{
+  box-sizing: border-box;
+}
+
+*{
+
+  box-sizing: inherit;
+}
+body {
+  font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 100%;
+  background-color: hsl(210, 13%, 91%);
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+nav ul{
+    list-style-type: none; 
+     display: flex;
+     height: 5em;
+     justify-content: center; 
+     align-items: center; 
+     margin: 0;
+     padding: 0;
+}
+nav ul li{
+    margin: 20px;
+}
+nav ul li.logo{
+    margin-right: auto;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+    padding-bottom: 10px;
+}
+nav ul li ~ li a:hover{
+    border-bottom: rgb(151, 57, 228) 2px solid;
+}
+
+main{
+    margin: 55px;
+    padding-top: 70px;
+
+}
+.intro{
+   display: flex;
+   border: saddlebrown 2px solid;
+}
+.intro h1{
+    font-size: 2em;
+    line-height: 1.1em;
+    margin-right: 400px;
+    padding: auto;
+    border: saddlebrown 2px solid;
+}
+.landing-page{
+    padding: 20px 50px;
+    border: saddlebrown 2px solid;
+}
+.landing-page p{
+    font-size: 1.2em;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.landing-page button{
+    margin-top: 30px;
+    margin-right: 13em;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: rgb(151, 57, 228);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.landing-page button:hover{
+    background-color: rgb(120, 40, 200);
+    box-shadow: 0 8px 12px rgba(151, 57, 228, 0.3);
+}
+.highlights{
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.highlights h2{
+    
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(120, 40, 200) ;
+}
+.mark{
+    color: rgb(151, 57, 228);
+}
+.mark2{
+    font-size: 1.5em;
+}
+
+
+/* Tablet */
+@media (max-width: 850px) {
+      .intro {
+        gap: 30px;
+    }
+    .intro h1 {
+        margin-right: 200px;
+        font-size: 1.5em;
+    }
+    .landing-page button{
+        margin-left: 20em;
+    }
+  .social-media {
+    display: none;
+    }
+}
+/* Tablet */
+@media (max-width: 850px) {
+
+    .highlights {
+        padding: 40px 20px;
+    }
+
+    .highlights h2 {
+        text-align: center;
+        font-size: 1.6em;
+        margin-bottom: 30px;
+    }
+
+    .card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .cc {
+        flex: 1 1 280px;  
+        max-width: 320px;
+        min-width: 260px;
+
+        padding: 18px;
+        text-align: center;
+    }
+
+    .cc h3 {
+        font-size: 1.2em;
+    }
+
+    .cc p {
+        font-size: 0.95em;
+        line-height: 1.4;
+    }
+
+    .cc ul li {
+        font-size: 0.9em;
+    }
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+
+    .certificates {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .certificates h2 {
+        font-size: 1.6em;
+        margin-bottom: 10px;
+    }
+
+    .certificates p {
+        font-size: 0.95em;
+        margin-bottom: 25px;
+    }
+
+    .certificates img {
+        width: 60px;
+        height: auto;
+        margin: 10px 15px;
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .certificates img:active {
+        transform: scale(0.95);
+    }
+}
+
+
+
+
+
+.card{
+    display: flex;
+    margin-left: 35px;
+     flex-wrap: wrap;
+    
+}
+.cc{
+    background-color: rgb(230, 230, 250);
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 12px 12px rgba(215, 4, 243, 0.1);
+    margin: 10px;
+    border-radius: 10px;
+}
+.cc:hover{
+    transform: scale(1.03);
+}
+h3{
+    color: rgb(151, 57, 228);
+}
+.cc ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cc ul li{
+    margin: 5px;
+    padding: 7px;
+    background-color: rgb(120, 40, 200) ;
+    color: white;
+    border-radius: 5px;
+}
+
+.certificates{
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+.certificates h2{
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(120, 40, 200) ;
+}
+.certificates p{
+    font-size: 1.2em;
+    text-align: center;
+}
+.certificates img{
+    margin: 45px;
+    width: 200px;
+    height: auto;
+}
+.contact{
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 30px;
+}
+.contact  h2{
+    padding: 0;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(120, 40, 200) ;
+}
+.contact form{
+    margin-top: 20px;
+    margin-left: 200px;
+ 
+}
+.contact form label{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+.contact form input[type="text"],[type="email"]{
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.contact form textarea{
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-shadow: 0 8px 12px rgba(247, 2, 214, 0.1);
+}
+.contact form input[type="submit"]{
+    background-color: rgb(151, 57, 228);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.contact form input[type="submit"]:hover{
+    background-color: rgb(120, 40, 200);
+    box-shadow: 0 8px 12px rgba(151, 57, 228, 0.3);
+}
+footer{
+    background-color: rgb(151, 57, 228);
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+}
+.social-media {
+    width: 50px;
+    right: 20px;
+    position: fixed;
+    top: 25%;
+    bottom: auto;
+    background-color: rgb(151, 57, 228);
+    border-radius: 50px;
+    z-index: 1000;
+}
+.social-media:hover {
+    background-color: rgb(120, 40, 200);
+    box-shadow: 0 8px 12px rgba(151, 57, 228, 0.3);
+}
+.social-media img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.social-media img:hover{
+    transform: scale(1.1);
+}
+.contact-info ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.contact-info ul li{
+    margin: 15px;
+}
+.contact-info ul li a{
+    text-decoration: none;
+    color:black;
+}
+.contact-info ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+

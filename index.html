@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 <body>
+    <div class="big-container">
     <header>
         <nav>
             <ul>
-                <li><a href="#">Tamiru Assefa</a></li>
+                <li class="link logo "><a href="#">Tamiru<span class="mark"> Assefa</span></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="Pages/about.html">About</a></li>
                 <li><a href="Pages/hobby.html">Hoddy</a></li>
@@ -20,19 +22,23 @@
     </header>
     <main>
         <div class="landing-page">
-            <h1><pre>           Hi👋, I'm Tamiru, 
+            <div class="intro">
+            <h1 class="intro-title"> Hi👋, I'm Tamiru</span>, 
          Solution Architect &
         junior DevOps Engineer 
-            from Ethiopia.</pre></h1>
-            <img src="Image_icon/Profile.png" alt="Profile Picture" width="200" height="200">
+            from <strong class="mark2"><span style="color: green;">Eth<span style="color: rgb(212, 212, 31);">iop</span><span style="color: red;">ia</span></span></strong>.</h1>
+            <img src="Image_icon/Profile.png" alt="Profile Picture" width="200" height="200" class="profile-img">
+        </div>
         <p>A 3<sup>rd</sup> year Computer Science student at St. Mary's University. <br>
              Passionate about leveraging cloud technologies to drive business success and innovation.</p>
-        <button> Resume </button>
-        </div>
-
-        <div class="hobby">
-            <h2>Interests</h2>
-            <div class="code">
+        
+             <button> Resume </button>
+        </div><br><br>
+<hr>
+        <div class="highlights">
+            <h2 id="ss">Interests</h2>
+            <div class="card">
+            <div class="cc code">
                 <img src="Image_icon/coding.png" alt="Coding Icon" width="50" height="50">
                 <h3>Coding</h3>
                 <p>Enjoy solving problems and building applications using various programming languages.</p>
@@ -43,7 +49,7 @@
                     <li>CICD</li>
             </div>
 
-             <div class="community">
+             <div class=" cc community">
                 <img src="Image_icon/community.png" alt="Coding Icon" width="50" height="50">
                 <h3>Build community</h3>
                 <p>Lead and organize tech events to promote learning and skill development.</p>
@@ -54,31 +60,31 @@
                     <li>Club</li>
             </div>
 
-            <div class="entertainments">
+            <div class=" cc entertainments">
                 <img src="Image_icon/entertainment.png" alt="Entertainment Icon" width="50" height="50">
                 <h3>Entertainments</h3>
                 <p>Engage in activities that bring joy and relaxation, balancing work and play.</p>
                 <ul>
-                    <li>BasketBall</li>
+                    <li>Basket Ball</li>
                     <li>Ride Cycle</li>
                     <li>Video Game</li>
                     <li>You Tube</li>
             </div>
         </div>
-
-
+</div>
+<br><br><hr>
         <div class="certificates">
             <h2>Certificates</h2>
             <p>Here are some of the certificates I've earned:</p>
-            <img src="Image_icon/aws-foundation.png" alt="Aws Foundation" width="50" height="50">
-            <img src="Image_icon/aws-associate.png" alt="Aws Associate" width="50" height="50">
+            <img src="Image_icon/aws-foundation.png" alt="Aws Foundation" width="50" height="50"> 
             <img src="Image_icon/aws-deepracer.png" alt="Aws Deepracer" width="50" height="50">
             <img src="Image_icon/aws-quest.png" alt="Aws Quest" width="  50" height="50">
+            <img src="Image_icon/aws-associate.png" alt="Aws Associate" width="50" height="50">
         </div>
-
-        <div id="contact">
-            <form action="#" method="get">
-                <h2>Contact Me</h2>
+<hr>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="get">    
                 <label for="name">Name:</label><br>
                 <input type="text" id="name" name="name" required><br>
                 <label for="email">Email:</label><br>
@@ -90,24 +96,31 @@
         </div>
 
         <div class="social-media">
-            <a href="https://www.linkedin.com/in/tamiru-assefa-123456789/" target="_blank"><img src="Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
+            &nbsp;<a href="https://www.linkedin.com/in/tamiru-assefa-123456789/" target="_blank"><img src="Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
             <a href="https://github.com/tamiruassefa" target="_blank"><img src="Image_icon/Icon/github.png" alt="GitHub"></a><br>
             <a href="https://twitter.com/tamiruassefa" target="_blank"><img src="Image_icon/Icon/whatsup.png" alt="WhatsApp"></a><br>
             <a href="https://www.facebook.com/tamiru.assefa" target="_blank"><img src="Image_icon/Icon/medium.png" alt="Medium"></a><br>
             <a href="https://www.instagram.com/tamiruassefa/" target="_blank"><img src="Image_icon/Icon/telegram.png" alt="Telegram"></a><br>
-            <a href="https://www.youtube.com/@tamiruassefa" target="_blank"><img src="Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
+            &nbsp;<a href="https://www.youtube.com/@tamiruassefa" target="_blank"><img src="Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
         </div>
     </main>
 
-    <hr>
     <footer>
-        <div class="contact-info">
-            <p>Email: tamiruassefa@example.com</p>
-            <p>Phone: +251 912 345 678</p>
+        <div class="contact-info"> 
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Hobby</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Email: ybtamiruasefa@gmail.com</p>
+            <p>Phone: +251 944011921</p>
             <p>Location: Addis Ababa, Ethiopia</p>
+          
         </div>
         <p>&copy; 2025 Personal Website. All rights reserved.</p>  
     </footer>
-    
+    </div>
 </body>
 </html>
