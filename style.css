@@ -86,24 +86,22 @@ main{
 }
 .intro{
    display: flex;
-   border: saddlebrown 2px solid;
 }
 .intro h1{
     font-size: 2em;
     line-height: 1.1em;
     margin-right: 400px;
-    border: saddlebrown 2px solid;
 }
 .landing-page{
     padding: 20px 50px;
-    border: saddlebrown 2px solid;
 }
 .landing-page p{
     font-size: 1.2em;
     margin-top: 20px;
     margin-left: 20px;
 }
-.landing-page button{
+.landing-page a{
+    text-decoration: none;
     margin-top: 30px;
     margin-left: 12em;
     padding: 10px 20px;
@@ -112,9 +110,8 @@ main{
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
 }
-.landing-page button:hover{
+.landing-page a:hover{
     background-color: rgb(120, 40, 200);
     box-shadow: 0 8px 12px rgba(151, 57, 228, 0.3);
 }
@@ -149,6 +146,7 @@ main{
 }
 .cc:hover{
     transform: scale(1.03);
+    border-top: 4px solid rgb(151, 57, 228);
 }
 h3{
     color: rgb(151, 57, 228);
@@ -278,5 +276,7 @@ footer{
     text-decoration: underline;
     color: white;
 }
-
+.active{
+    border-bottom: rgb(151, 57, 228) 2px solid;
+}
 

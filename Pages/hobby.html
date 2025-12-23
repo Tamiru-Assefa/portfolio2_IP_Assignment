@@ -3,16 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Hobbies</title>
+    <style>
+        main h2{
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #9739e4; 
+            text-align: center;
+        }
+        .hobby-section {
+            display: flex;
+            margin: 50px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .hobby-item{
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 8px 12px rgba(206, 1, 247, 0.1);
+            padding: 20px;
+            margin: 10px;
+            width: 350px;
+            text-align: center;
+        }
+        .hobby-item img{
+            margin-bottom: 15px;
+            border-radius: 8px;
+        }
+        .hobby-item ul{
+            list-style: none;
+            margin-top: 40px;
+            margin-left: 20px;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .hobby-item ul li{
+            margin-bottom: 10px;
+            font-size: 1.05em;
+            margin-right: 15px;
+            background-color: #9739e4;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .hobby-item:hover {
+            transform: scale(1.03);
+            box-shadow: 0 12px 16px rgba(206, 1, 247, 0.2);
+            border-top: #9739e4 4px solid;
+
+        }
+
+
+    </style>
 </head>
 <body>
         <header>
         <nav>
             <ul>
-                <li><a href="#">Tamiru Assefa</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li class="link logo "><a href="#">Tamiru<span style="color: rgb(192, 0, 182);"> Assefa</span></a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="hobby.html" class="active">Hobby</a></li>
                 <li><a href="favourite.html">Favorite</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -22,7 +75,7 @@
         <h2>Hobbies</h2>
         <div class="hobby-section">
             <div class="hobby-item">
-                <img src="Image_icon/coding.png" alt="Coding Icon" width="50" height="50">
+                <img src="../Image_icon/code-dog.png" alt="Coding Icon" width="300" height="auto">
                 <h3>Coding</h3>
                 <p>Enjoy solving problems and building applications using various programming languages.</p>
                 <ul>
@@ -34,7 +87,7 @@
             </div>
 
             <div class="hobby-item">
-                <img src="Image_icon/community.png" alt="Community Icon" width="50" height="50">
+                <img src="../Image_icon/comm.jpg" alt="Community Icon" width="300" height="auto">
                 <h3>Build Community</h3>
                 <p>Lead and organize tech events to promote learning and skill development.</p>
                 <ul>
@@ -46,7 +99,7 @@
             </div>
 
             <div class="hobby-item">
-                <img src="Image_icon/entertainment.png" alt="Entertainment Icon" width="50" height="50">
+                <img src="../Image_icon/entertain.png" alt="Entertainment Icon" width="300" height="auto">
                 <h3>Entertainments</h3>
                 <p>Engage in activities that bring joy and relaxation, balancing work and play.</p>
                 <ul>
@@ -56,20 +109,33 @@
                     <li>Sports</li>
                 </ul>
             </div>
-
+            </div>
 
 
          <div class="social-media">
-            <a href="https://www.linkedin.com/in/tamiru-assefa-123456789/" target="_blank"><img src="Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
-            <a href="https://github.com/tamiruassefa" target="_blank"><img src="Image_icon/Icon/github.png" alt="GitHub"></a><br>
-            <a href="https://twitter.com/tamiruassefa" target="_blank"><img src="Image_icon/Icon/whatsup.png" alt="WhatsApp"></a><br>
-            <a href="https://www.facebook.com/tamiru.assefa" target="_blank"><img src="Image_icon/Icon/medium.png" alt="Medium"></a><br>
-            <a href="https://www.instagram.com/tamiruassefa/" target="_blank"><img src="Image_icon/Icon/telegram.png" alt="Telegram"></a><br>
-            <a href="https://www.youtube.com/@tamiruassefa" target="_blank"><img src="Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
+            <a href="https://www.linkedin.com/in/tamiru-assefa-123456789/" target="_blank"><img src="../Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
+            <a href="https://github.com/tamiruassefa" target="_blank"><img src="../Image_icon/Icon/github.png" alt="GitHub"></a><br>
+            <a href="https://twitter.com/tamiruassefa" target="_blank"><img src="../Image_icon/Icon/whatsup.png" alt="WhatsApp"></a><br>
+            <a href="https://www.facebook.com/tamiru.assefa" target="_blank"><img src="../Image_icon/Icon/medium.png" alt="Medium"></a><br>
+            <a href="https://www.instagram.com/tamiruassefa/" target="_blank"><img src="../Image_icon/Icon/telegram.png" alt="Telegram"></a><br>
+            <a href="https://www.youtube.com/@tamiruassefa" target="_blank"><img src="../Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
         </div>
     </main>
     
     <footer>
+         <div class="contact-info"> 
+             <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Hobby</a></li>
+                <li><a href="#">Favorite</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p>Email: ybtamiruasefa@gmail.com</p>
+            <p>Phone: +251 944011921</p>
+            <p>Location: Addis Ababa, Ethiopia</p>
+          
+        </div>
         <p>&copy; 2025 Personal Website. All rights reserved.</p>  
     </footer>
 
