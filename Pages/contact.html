@@ -3,27 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Contact</title>
+
+    <style>
+        h1{
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #9739e4; 
+            text-align: center;
+            margin-top: 0;
+        }
+        .contactpage{
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        form {
+            max-width: 800px;
+            margin: 0 auto 50px auto;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 8px 12px rgba(151, 57, 228, 0.1);
+        }
+        form h2{
+            text-align: center;
+            color: #9739e4;
+            margin-bottom: 20px;
+        }
+        form input[type="text"], form input[type="email"], textarea{
+            margin-bottom: 30px;
+        }
+        form input[type="text"], form input[type="email"], textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form input[type="submit"] {
+            background-color: #9739e4;
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        form input[type="submit"]:hover {
+            background-color: #6b1fc4;
+            box-shadow: 4px 4px 10px rgba(107, 31, 196, 0.3);
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#">Tamiru Assefa</a></li>
+                <li class="link logo "><a href="#">Tamiru<span style="color: rgb(192, 0, 182);"> Assefa</span></a></li>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="hobby.html">Hobby</a></li>
                 <li><a href="favourite.html">Favorite</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="active">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <div class="contactpage">
         <h1>Contact Me</h1>
         <p>I welcome your feedback and inquiries. Please don't hesitate to get 
             in touch if you have any questions or suggestions. </p>
-
+         </div>
         <div id="contact">
             <form action="#" method="get">
                 <h2>Contact Me</h2>
@@ -39,20 +93,28 @@
 
         
             <div class="social-media">
-                <a href="https://www.linkedin.com/in/tamiru-assefa-123456789/" target="_blank"><img src="../Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
-                <a href="https://github.com/tamiruassefa" target="_blank"><img src="../Image_icon/Icon/github.png" alt="GitHub"></a><br>
-                <a href="https://twitter.com/tamiruassefa" target="_blank"><img src="../Image_icon/Icon/whatsup.png" alt="WhatsApp"></a><br>
-                <a href="https://www.facebook.com/tamiru.assefa" target="_blank"><img src="../Image_icon/Icon/medium.png" alt="Medium"></a><br>
-                <a href="https://www.instagram.com/tamiruassefa/" target="_blank"><img src="../Image_icon/Icon/telegram.png" alt="Telegram"></a><br>
-                <a href="https://www.youtube.com/@tamiruassefa" target="_blank"><img src="../Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
+                <a href="https://www.linkedin.com/in/tamiru-assefa-47b639251/" target="_blank"><img src="../Image_icon/Icon/linkedin.png" alt="LinkedIn"></a><br>
+                <a href="https://github.com/youngbtamea" target="_blank"><img src="../Image_icon/Icon/github.png" alt="GitHub"></a><br>
+                <a href="https://wa.me/251944011921" target="_blank"><img src="../Image_icon/Icon/whatsup.png" alt="WhatsApp"></a><br>
+                <a href="https://medium.com/@ybtamiruasefa" target="_blank"><img src="../Image_icon/Icon/medium.png" alt="Medium"></a><br>
+                <a href="https://t.me/ybt123" target="_blank"><img src="../Image_icon/Icon/telegram.png" alt="Telegram"></a><br>
+                <a href="https://x.com/youngbtamea" target="_blank"><img src="../Image_icon/Icon/twitter.png" alt="Twitter"></a><br>
              </div>
      </main>
 
      <footer>
-        <div class="contact-info">
-            <p>Email: tamiruassefa@example.com</p>
-            <p>Phone: +251 912 345 678</p>
+         <div class="contact-info"> 
+             <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="hobby.html">Hobby</a></li>
+                <li><a href="favourite.html">Favorite</a></li>
+                <li><a href="../index.html#contactme">Contact</a></li>
+            </ul>
+            <p>Email: ybtamiruasefa@gmail.com</p>
+            <p>Phone: +251 944011921</p>
             <p>Location: Addis Ababa, Ethiopia</p>
+          
         </div>
         &copy; 2024 Tamiru Assefa
      </footer>
